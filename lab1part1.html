@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
-
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="app.js"></script>
-
-</head>
+<link rel="stylesheet" type="text/css" href="lab1.css"></head>
 
 <body>
 <div id="googleMap" style="width:800px;height:600px;"></div>
 
 </br>
-
+<div id="typeButtons">
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.TERRAIN);">TERRAIN</button>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.ROADMAP);">ROADMAP</button>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.SATELLITE);">SATELLITE</button>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.HYBRID);">HYBRID</button>
+</div>
+</br>
+
+<div id="zoomButtons">
+	Zoom
+</br>
+<button id="zoomIn">+</button>
+<button id="zoomOut">-</button>
+</div>
+
+<div id="controlButtons">
+<button onclick="">Left</button>
+<button onclick="">Right</button>
+<button onclick="">Up</button>
+<button onclick="">Down</button>
+</div>
+
+
 
 </body>
 </html>
