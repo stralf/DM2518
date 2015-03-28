@@ -6,29 +6,47 @@
 <link rel="stylesheet" type="text/css" href="lab1.css"></head>
 
 <body>
+<div id="mapStuff">
 <div id="googleMap" style="width:800px;height:600px;"></div>
 
 </br>
-<div id="typeButtons">
+<table style="width:800px;">
+<tr>
+<td>
+<div class="typeButtons">
+	Type
+</br>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.TERRAIN);">TERRAIN</button>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.ROADMAP);">ROADMAP</button>
+</br>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.SATELLITE);">SATELLITE</button>
 <button onclick="map.setMapTypeId(google.maps.MapTypeId.HYBRID);">HYBRID</button>
 </div>
-</br>
+</td>
 
-<div id="zoomButtons">
+<td>
+<div class="zoomButtons">
 	Zoom
 </br>
 <button id="zoomIn">+</button>
 <button id="zoomOut">-</button>
 </div>
+</td>
 
-<div id="controlButtons">
-<button onclick="">Left</button>
-<button onclick="">Right</button>
-<button onclick="">Up</button>
-<button onclick="">Down</button>
+<td>
+<div class="controlButtons">
+	Pan
+</br>
+<button id="up">Up</button>
+</br>
+<button id="left">Left</button>
+<button id="right">Right</button>
+</br>
+<button id="down">Down</button>
+</div>
+</td>
+</tr>
+</table>
 </div>
 
 

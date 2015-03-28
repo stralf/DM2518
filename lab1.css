@@ -1,5 +1,13 @@
-#zoomButtons {
-
-	color: red;
-
+.typeButtons {
+float: left;
+text-align: center;
 }
+.zoomButtons {
+float: center;
+text-align: left;
+}
+.controlButtons {
+float:right;
+text-align: center;
+}
+
