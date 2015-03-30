@@ -1,12 +1,53 @@
+/* start */
+
 .typeButtons {
 float: left;
 text-align: center;
 }
 .zoomButtons {
-float: center;
-text-align: left;
+
 }
 .controlButtons {
-float:right;
+margin-left: 20px;
 text-align: center;
+
+}
+
+#googleMap {
+
+	width:800px;
+	height:600px;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+#controlBar {
+
+	width:480px;
+}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
 }

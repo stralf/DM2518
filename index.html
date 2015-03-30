@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="app.js"></script>
-<!-- <link rel="stylesheet" type="text/css" href="lab1.css"></head> -->
+<link rel="stylesheet" type="text/css" href="lab1.css"></head>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <body>
 <div id="mapStuff">
-<div id="googleMap" style="width:800px;height:600px;"></div>
+<div id="googleMap"></div>
 
-<table style="float:left;">
+<table id="controlBar" style="float:left;">
 <tr>
 <td>
 <div class="typeButtons">
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.TERRAIN);">TERRAIN</button>
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.ROADMAP);">ROADMAP</button>
-</br>
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.SATELLITE);">SATELLITE</button>
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.HYBRID);">HYBRID</button>
 </div>
@@ -23,7 +24,7 @@
 
 
 <td>
-<div class="zoomButtons">
+<div style="margin-left: 20px;" class="zoomButtons">
 </br>
 <span style="font-size:250%;" class="glyphicon glyphicon-zoom-in" id="zoomIn"></span>
 </br>
@@ -32,7 +33,7 @@
 </td>
 
 <td>
-<div style="text-align: center;" class="controlButtons">
+<div class="controlButtons">
 	<b>Pan</b>
 </br>
 <div>
