@@ -1,0 +1,19 @@
+#controlBar{
+	width:320px;
+	height:80px;
+}
+
+#googleMap{
+	width:320px;
+	height: 400px;
+
+}
+
+button.btn{
+
+	font-size:50%;
+}
+
+span.glyphicon {
+  font-size: 100%;
+}
