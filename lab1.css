@@ -1,21 +1,47 @@
 /* Desktop */
-
-.typeButtons {
-float: left;
-text-align: center;
-}
-span.glyphicon {
-  font-size: 150%;
-}
-
-.controlButtons {
-margin-left: 20px;
-text-align: center;
-}
-
-
-
 #googleMap {
-	width:800px;
-	height:600px;
+  width:800px;
+  height:600px;
+}  
+
+#controlBar {
+position: relative;
+width:800px;
+height:100px;
+background-color: #87CEFA;
+  border-style: solid;
+  border.width: 6px;
+  border-color: black;
+}
+
+#typeButtons {
+  float: left;
+  text-align: center;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+#zoomButtons {
+float: center;
+
+}
+
+#controlButtons {
+text-align: center;
+float: right;
+margin-right: 4px;
+}
+
+button.btn{
+  font-size:100%;
+  color: black;
+  font-style: bold;
+  float:left;
+  height:40px;
+  width:120px;
+
+}
+
+span.glyphicon {
+  font-size: 170%;
 }

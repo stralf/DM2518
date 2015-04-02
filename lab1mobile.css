@@ -1,19 +1,45 @@
-#controlBar{
-	width:320px;
-	height:80px;
-}
-
 #googleMap{
 	width:320px;
 	height: 400px;
+}
+
+#controlBar{
+	width:320px;
+	height:80px;
+	background-color: #87CEFA;
+	position: relative;
+	border-style: solid;
+	border.width: 3px;
+	border-color: black;
+}
+
+#typeButtons {
+	position: relative;
+	margin-bottom: 3px;
+}
+
+#zoomButtons {
+float:center;
+}
+
+#controlButtons {
+text-align: center;
+float: right;
 
 }
 
 button.btn{
-
 	font-size:50%;
+	color: black;
+	font-style: bold;
+	float:left;
+	height:20px;
+	width:60px;
 }
 
 span.glyphicon {
   font-size: 100%;
 }
+
+
+

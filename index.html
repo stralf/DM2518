@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="app.js"></script>
 <link rel="stylesheet" type="text/css" href="lab1.css"></head>
@@ -12,31 +12,24 @@
 <div id="mapStuff">
 <div id="googleMap"></div>
 
-<table id="controlBar" style="float:left;">
+<table id="controlBar">
 <tr>
-<td>
-<div class="typeButtons">
+<td id="typeButtons">
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.TERRAIN);">TERRAIN</button>
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.ROADMAP);">ROADMAP</button>
+</br>
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.SATELLITE);">SATELLITE</button>
 <button class="btn btn-primary btn-sm" onclick="map.setMapTypeId(google.maps.MapTypeId.HYBRID);">HYBRID</button>
-</div>
 </td>
 
 
-<td>
-<div style="margin-left: 20px;" class="zoomButtons">
-</br>
+<td id="zoomButtons">
 <span class="glyphicon glyphicon-zoom-in" id="zoomIn"></span>
 </br>
 <span class="glyphicon glyphicon-zoom-out" id="zoomOut"></span>
-</div>
 </td>
 
-<td>
-<div class="controlButtons">
-</br>
-<div>
+<td id="controlButtons">
 <span style="text-align: center;" class="glyphicon glyphicon-arrow-up" id="up"></span>
 </br>
 <span class="glyphicon glyphicon-arrow-left" id="left"></span>
@@ -46,8 +39,6 @@
 </td>
 </tr>
 </table>
-</div>
-</div>
 </div>
 
 
